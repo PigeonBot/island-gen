@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+## Source Code
 
-You can use the [editor on GitHub](https://github.com/PigeonBot/island-gen/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+### Python
 ```markdown
-Syntax highlighted code block
+import random
 
-# Header 1
-## Header 2
-### Header 3
+seqType = random.randint(0,8)
 
-- Bulleted
-- List
+a = ['Blackened', 'Broken', 'Concealed', 'Dreaded', 'Fancy', 'Grand', 'Hidden', 'Mystic', 'Plentiful', 'Ravaged', 'Royal', 'Salted', 'Scorched', 'Secluded', 'Secret', 'Splenid', 'Stolen', 'Sunken', 'Sweet', 'Wrecked']
+b = ["Barracuda's", "Captain's", "Dragon's", "Guild's", "Hunter's", "Kraken's", "Maiden's", "Mermaid's", "Order's", "Parrot's", "Raider's", "Sailor's", "Shark's", "Shipwreck's", "Siren's", "Storm's", "Thieve's", "Triton's", "Turtle's", "Wanderer's"]
+c = ['Asylum', 'Bounty', 'Den', 'Fort', 'Gem', 'Harbor', 'Haven', 'Hideout', 'Hold', 'Jewel', 'Keep', 'Port', 'Refuge', 'Rest', 'Retreat', 'Sanctuary', 'Shelter', 'Stronghold', 'Treasure', 'Trove']
+d = ['Archipelago', 'Atol', 'Bay', 'Bluffs', 'Cliffs', 'Cove', 'Crag', 'Enclave', 'Groves', 'Hollow', 'Island', 'Isle', 'Lagoon', 'Peninsula', 'Reef', 'Ridge', 'Rock', 'Sands', 'Shallows', 'Shores']
+e = ['amidst the Maelstroms', 'between the Waves', 'in the Mists', 'in the Shadows', 'of a Thousand Coins', 'of Plentiful Riches', 'of Skulls ', 'of the Countless Wrecks', 'of the Cursed', 'of the Damned', 'of the Depths', 'of the Homesick', 'of the Lawless', 'of the Lost Souls', 'of the Moon', 'of the Raven', 'of the Sunset', 'of the Sweet Embrace', 'of the Tides', 'of Whispers']
 
-1. Numbered
-2. List
+r1 = random.randint(0,18)
+r2 = random.randint(0,18)
+r3 = random.randint(0,18)
 
-**Bold** and _Italic_ and `Code` text
+sequences = [a[r1] + ' ' + c[r2], a[r1] + ' ' + b[r2] + ' ' + c[r3], a[r1] + ' ' + d[r2], a[r1] + ' ' + b[r2] + ' ' + d[r3], a[r1] + ' ' + c[r2] + ' ' + e[r3], b[r1] + ' ' + d[r2] + ' ' + e[r3], a[r1] + ' ' + d[r2] + ' ' + e[r3], b[r1] + ' ' + e[r2], d[r1] + ' ' + e[r2]]
 
-[Link](url) and ![Image](src)
+sequence = (sequences[seqType])
+print(sequence)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Javascript
+```markdown
+let seqType = Math.floor(Math.random() * 9)
 
-### Jekyll Themes
+let a = ['Blackened', 'Broken', 'Concealed', 'Dreaded', 'Fancy', 'Grand', 'Hidden', 'Mystic', 'Plentiful', 'Ravaged', 'Royal', 'Salted', 'Scorched', 'Secluded', 'Secret', 'Splenid', 'Stolen', 'Sunken', 'Sweet', 'Wrecked']
+let b = ["Barracuda's", "Captain's", "Dragon's", "Guild's", "Hunter's", "Kraken's", "Maiden's", "Mermaid's", "Order's", "Parrot's", "Raider's", "Sailor's", "Shark's", "Shipwreck's", "Siren's", "Storm's", "Thieve's", "Triton's", "Turtle's", "Wanderer's"]
+let c = ['Asylum', 'Bounty', 'Den', 'Fort', 'Gem', 'Harbor', 'Haven', 'Hideout', 'Hold', 'Jewel', 'Keep', 'Port', 'Refuge', 'Rest', 'Retreat', 'Sanctuary', 'Shelter', 'Stronghold', 'Treasure', 'Trove']
+let d = ['Archipelago', 'Atol', 'Bay', 'Bluffs', 'Cliffs', 'Cove', 'Crag', 'Enclave', 'Groves', 'Hollow', 'Island', 'Isle', 'Lagoon', 'Peninsula', 'Reef', 'Ridge', 'Rock', 'Sands', 'Shallows', 'Shores']
+let e = ['amidst the Maelstroms', 'between the Waves', 'in the Mists', 'in the Shadows', 'of a Thousand Coins', 'of Plentiful Riches', 'of Skulls ', 'of the Countless Wrecks', 'of the Cursed', 'of the Damned', 'of the Depths', 'of the Homesick', 'of the Lawless', 'of the Lost Souls', 'of the Moon', 'of the Raven', 'of the Sunset', 'of the Sweet Embrace', 'of the Tides', 'of Whispers']
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/PigeonBot/island-gen/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+let r1 = Math.floor(Math.random() * 20)
+let r2 = Math.floor(Math.random() * 20)
+let r3 = Math.floor(Math.random() * 20)
 
-### Support or Contact
+let sequences = [a[r1] + ' ' + c[r2], a[r1] + ' ' + b[r2] + ' ' + c[r3], a[r1] + ' ' + d[r2], a[r1] + ' ' + b[r2] + ' ' + d[r3], a[r1] + ' ' + c[r2] + ' ' + e[r3], b[r1] + ' ' + d[r2] + ' ' + e[r3], a[r1] + ' ' + d[r2] + ' ' + e[r3], b[r1] + ' ' + e[r2], d[r1] + ' ' + e[r2]]
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+let sequence = sequences[seqType]
+```
