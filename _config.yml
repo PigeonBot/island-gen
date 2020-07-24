@@ -1,4 +1,5 @@
 theme: jekyll-theme-midnight
-site.title: nil
+title: Pirate Island Name Generator
 description: Generates Pirate-Style island names with the press of a button!
-name: Test
+name: Test1
+baseurl: /island-gen
