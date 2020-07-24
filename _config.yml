@@ -1,4 +1,4 @@
 theme: jekyll-theme-midnight
-title: null
+site.title: nil
 description: Generates Pirate-Style island names with the press of a button!
 name: Test
